@@ -1,7 +1,7 @@
 import hashlib
 import shutil
 
-def get_file_hash(file_path):
+def get_file_hash(file_path: object) -> str:
     """  Take hash information"""
     hash_md5 = hashlib.md5()
     with open(file_path, "rb") as file:
