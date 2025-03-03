@@ -19,4 +19,24 @@ def sync_folders(source, replica, logger):
             replica_file = os.path.join(replica_root, file)
 
             if not os.path.exists(replica_file) or get_file_hash(src) != get_file_hash(replica_file):
+                copy(src, replica_file)
+                logger.log(f"Copy/update file: {replica}")
+
+    for root, dirs, files in os.walk(replica, topdown=False):
+        rel_path = os.path.join(root, replica)
+        source_root = os.path.join(source_root, file)
+
+        for file in files:
+            replica_file = os.path.join(root, file)
+            source_file = os.path.join(source_root, file)
+
+            if not os.path.exists(source_file) or get_file_hash(replica_file)!= get_file_hash(source_file):
+                os.remove(replica_file)
+                logger.log(f"Delete file: {replica_file}")
+            for dir in dirs:
+                replica_dir = os.path.join(root, dir)
+                source_dir = os.path.join(source_root, dir)
+                if not os.path.exists(source_dir)
+                    logger.log(f"Delete dir: {source_dir}")
+
 
