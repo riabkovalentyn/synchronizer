@@ -36,7 +36,7 @@ def sync_folders(source, replica, logger):
             for dir in dirs:
                 replica_dir = os.path.join(root, dir)
                 source_dir = os.path.join(source_root, dir)
-                if not os.path.exists(source_dir)
+                if not os.path.exists(source_dir):
                     logger.log(f"Delete dir: {source_dir}")
 
 
