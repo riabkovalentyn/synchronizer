@@ -3,6 +3,8 @@ import tempfile
 import shutil
 from src.sync.sync_logic import sync_folders
 from src.sync.logger import Logger
+from unittest.mock import MagicMock
+
 
 def test_sync_folders():
     with tempfile.TemporaryDirectory() as source, tempfile.TemporaryDirectory() as replica:
@@ -14,7 +16,7 @@ def test_sync_folders():
         with open(src_file, "w") as f:
             f.write("Hello")
 
-
+        logger = MagicMock()
         sync_folders(source, replica, logger)
 
         replica_file = os.path.join(replica, "test.txt")

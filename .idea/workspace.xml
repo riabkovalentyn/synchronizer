@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b38bc396-9145-4c46-bd9e-32ec8fa29496" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sync/watchdog.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test.logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_file_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_file_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_sync_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_sync_logic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_watchdog.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_watchdog.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Python Unit Test" />
       </list>
     </option>
   </component>
@@ -66,7 +70,7 @@
       <updated>1740986761807</updated>
       <workItem from="1740986762809" duration="934000" />
       <workItem from="1741023802267" duration="20471000" />
-      <workItem from="1741159594054" duration="7166000" />
+      <workItem from="1741159594054" duration="8141000" />
     </task>
     <servers />
   </component>

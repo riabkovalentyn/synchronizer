@@ -1,5 +1,6 @@
 import os
 import tempfile
+import hashlib
 from src.sync.file_utils import get_file_hash, copy
 
 def test_get_file_hash():
@@ -8,9 +9,8 @@ def test_get_file_hash():
         temp_file_path = temp_file.name
 
     try:
-        hash1 = get_file_hash(temp_file_path)
-        hash2 = get_file_hash(temp_file_path)
-        assert hash1 == hash2, "Hash must match"
+        expected_hash = hashlib.md5(b"test content").hexdigest()
+        assert get_file_hash(temp_file_path) == expected_hash, "Hash must match"
     finally:
         os.remove(temp_file_path)
 
