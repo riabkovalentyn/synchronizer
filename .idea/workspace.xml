@@ -5,15 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b38bc396-9145-4c46-bd9e-32ec8fa29496" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sync/watchdog.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sync/file_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sync/file_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sync/sync_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sync/sync_logic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,7 +66,7 @@
       <updated>1740986761807</updated>
       <workItem from="1740986762809" duration="934000" />
       <workItem from="1741023802267" duration="20471000" />
-      <workItem from="1741159594054" duration="2647000" />
+      <workItem from="1741159594054" duration="7166000" />
     </task>
     <servers />
   </component>
