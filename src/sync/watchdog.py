@@ -1,6 +1,7 @@
+import time
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
-import time
+
 from sync_logic import sync_folders
 from logger import Logger
 
